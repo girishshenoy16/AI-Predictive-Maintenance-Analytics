@@ -193,7 +193,7 @@ AI-Predictive-Maintenance/
 Clone repository:
 
 ```
-git clone https://github.com/girishshenoy16/AI-Predictive-Maintenance-Platform
+git clone https://github.com/girishshenoy16/AI-Predictive-Maintenance-Platform.git
 cd AI-Predictive-Maintenance
 ```
 
