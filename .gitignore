@@ -1,0 +1,60 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*.so
+
+# Virtual Environments
+venv/
+.env/
+.envrc/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Large ML Artifacts
+# ==========================
+
+# Models
+models/*.pkl
+models/*.joblib
+
+# Raw & Processed Data
+data/raw/
+data/processed/
+
+# Generated Reports
+reports/*.png
+reports/*.csv
+
+# SHAP Outputs
+reports/shap_*
+
+# Logs
+*.log
+
+# ==========================
+# Streamlit
+# ==========================
+.streamlit/
+
+# ==========================
+# Temporary Files
+# ==========================
+*.tmp
+*.bak
