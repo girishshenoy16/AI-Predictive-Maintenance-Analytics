@@ -319,9 +319,3 @@ This project demonstrates:
 * Realistic industry application
 
 It reflects how predictive maintenance systems are built in real manufacturing organizations.
-
----
-
-# 👨‍💻 Author
-**Girish Shenoy**
-Computer Science Student | Aspiring AI & Business Analyst
