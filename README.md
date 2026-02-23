@@ -1,6 +1,6 @@
-# 🚀 AI Predictive Maintenance Platform
+# 🏭 AI-Driven Predictive Maintenance & Failure Risk Analytics for Manufacturing Equipment  
 
-### Industry-Grade End-to-End AI System for Manufacturing
+### Industry-Grade End-to-End AI System for Manufacturing  
 
 ---
 
@@ -20,35 +20,38 @@
 
 # 📌 Overview
 
-This project delivers a **complete, industry-oriented AI Predictive Maintenance platform** designed for manufacturing environments.
+This project delivers a complete, industry-oriented AI system for predictive maintenance and failure risk analytics in manufacturing environments.
 
-It simulates real-world deployment of:
+It simulates real-world industrial deployment of:
 
-* 🔴 Failure Probability Prediction
-* 🟠 Remaining Useful Life (RUL) Estimation
-* 🟢 Risk-Based Machine Segmentation
-* 🔍 SHAP-Based Explainable AI
-* 📊 Executive Dashboard for Decision-Making
+- 🔴 Failure Probability Prediction (within 30 cycles)
+- 🟠 Remaining Useful Life (RUL) Estimation
+- 🟢 Risk-Based Machine Segmentation (High / Medium / Low)
+- 🔍 SHAP-Based Explainable AI
+- 📊 Executive Dashboard for Decision-Making
 
-This is not an academic notebook — it is a full ML pipeline with production-style structure.
+This is not an academic notebook — it is a structured, production-style ML pipeline aligned with real manufacturing use cases.
 
 ---
 
 # 🏭 Business Problem
 
-Manufacturing operations face:
+Manufacturing organizations face:
 
-* Unexpected machine breakdowns
-* Expensive emergency repairs
-* Downtime losses
-* Inefficient maintenance planning
+- Unexpected machine breakdowns  
+- High emergency repair costs  
+- Downtime losses  
+- Inefficient maintenance scheduling  
 
-This system helps maintenance teams:
+Traditional reactive maintenance increases cost and risk.
 
-✔ Identify high-risk machines early
-✔ Prioritize inspections intelligently
-✔ Reduce unplanned downtime
-✔ Optimize maintenance scheduling
+This AI-driven system enables:
+
+✔ Proactive failure detection  
+✔ Intelligent maintenance prioritization  
+✔ Reduced downtime  
+✔ Better asset lifecycle planning  
+✔ Data-driven operational decisions  
 
 ---
 
@@ -61,7 +64,7 @@ Data Cleaning & Label Engineering
       ↓
 Feature Engineering (Rolling + Degradation Trends)
       ↓
-Random Forest Models
+Random Forest Models (Classifier + Regressor)
       ↓
 Failure Probability + RUL Prediction
       ↓
@@ -86,12 +89,18 @@ Interactive Executive Dashboard
 | Recall (Failure)    | **0.84** |
 | F1-Score            | **0.86** |
 
+The model demonstrates strong separability and reliable early-failure detection.
+
+---
+
 ## 🔹 Remaining Useful Life (Regression)
 
 | Metric | Value            |
 | ------ | ---------------- |
 | MAE    | **23.77 cycles** |
 | RMSE   | **33.77 cycles** |
+
+The RUL estimation provides operationally meaningful lifecycle predictions for maintenance planning.
 
 ---
 
@@ -103,46 +112,53 @@ Machines are ranked by predicted RUL:
 * 🟠 Next 30% → MEDIUM Risk
 * 🟢 Remaining 50% → LOW Risk
 
-This ensures realistic and proportional maintenance prioritization.
+This rank-based segmentation avoids unstable probability thresholds and ensures proportional resource allocation.
+
+This also ensures realistic and proportional maintenance prioritization.
 
 ---
 
-# 🔍 Explainable AI (SHAP)
+# 🔍 Explainable AI (SHAP Integration)
 
-The system integrates SHAP for:
+The system integrates SHAP fo model transparency:
 
 ### 🌍 Global Explainability
 
 * Sensor importance ranking
-* Feature contribution visualization
+* Sensor contribution visualization
+* Feature contribution visualization 
+* Feature importance ranking
+* System-wide degradation drivers
 
 ### 🔬 Per-Engine Explainability
 
-* Top 5 risk drivers
+* Top 5 failed drivers
 * Waterfall contribution plots
-* Directional impact interpretation
+* Directional impact interpretation (↑ increases risk / ↓ reduces risk)
 
-This ensures:
+Explainability ensures:
 
 * Transparency
-* Trust
 * Engineering validation
+* Stakeholder Trust
 * Responsible AI implementation
 
 ---
 
 # 📊 Dashboard Capabilities
 
-The Streamlit dashboard includes:
+The Streamlit dashboard provides:
 
 * Fleet Overview KPIs
 * Risk Distribution Visualization
 * Machine Drill-Down Analysis
 * Failure Probability (%)
 * Predicted RUL (cycles)
-* AI Maintenance Recommendation
+* AI-based Maintenance Recommendation
 * Global SHAP Importance
 * Per-Engine SHAP Analysis
+
+The dashboard simulates executive-level operational monitoring.
 
 ---
 
@@ -193,8 +209,8 @@ AI-Predictive-Maintenance/
 Clone repository:
 
 ```
-git clone https://github.com/girishshenoy16/AI-Predictive-Maintenance-Platform.git
-cd AI-Predictive-Maintenance
+git clone https://github.com/girishshenoy16/AI-Predictive-Maintenance-Analytics.git
+cd AI-Predictive-Maintenance-Analytics
 ```
 
 Create virtual environment:
@@ -265,7 +281,7 @@ NASA Turbofan Engine Degradation Dataset (FD001)
 
 * 100 engines
 * Multiple sensor readings
-* Time-based degradation simulation
+* Time-based degradation simulations or patterns
 
 Used to replicate real-world predictive maintenance environment.
 
@@ -291,8 +307,8 @@ Used to replicate real-world predictive maintenance environment.
 * Time-Series Feature Engineering
 * Classification & Regression Modeling
 * Risk-Based Segmentation
-* Model Evaluation & Validation
 * Explainable AI Implementation
+* Model Evaluation & Validation
 * Production-Style Dashboard Development
 * Business Impact Framing
 
@@ -303,25 +319,23 @@ Used to replicate real-world predictive maintenance environment.
 * Model Drift Monitoring
 * Real-Time API Deployment (FastAPI)
 * Streaming Sensor Integration
-* Cost-Based Optimization Layer
+* Cost-Based Maintenance Optimization 
 * Ensemble Model Comparison
 
 ---
 
 # ⭐ Why This Project Stands Out
 
-This project demonstrates:
+This project reflects how predictive maintenance solutions are built in real manufacturing environments:
 
 * Production-style ML pipeline
-* Business-aligned AI solution
+* Business-aligned AI design & solution
 * Explainable AI integration
-* Deployable dashboard
+* Transferrable and explainable modeling
+* Scalable system structure
+* Deployment-ready dashboard
 * Realistic industry application
 
-It reflects how predictive maintenance systems are built in real manufacturing organizations.
+It demonstrates practical AI system thinking beyond academic experimentation.
 
 ---
-
-# 👨‍💻 Author
-**Girish Shenoy**
-Computer Science Student | Aspiring AI & Business Analyst
