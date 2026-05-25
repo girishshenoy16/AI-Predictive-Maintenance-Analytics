@@ -68,6 +68,8 @@ st.markdown(
 SUMMARY_PATH = Path("reports/machine_risk_summary.csv")
 FEATURE_PATH = Path("data/processed/fd001_features.csv")
 MODEL_PATH = Path("models/RF_Classifier_failure_classifier.pkl")
+OUTPUT_PATH = Path("outputs")
+OUTPUT_PATH.mkdir(exist_ok=True)
 
 
 # --------------------------------------------------
@@ -374,8 +376,8 @@ with tab2:
 
     fig, ax = plt.subplots()
     shap.summary_plot(shap_values_to_plot, X_sample, show=False)
+    fig.savefig(OUTPUT_PATH / "dashboard_shap_summary_plot.png", dpi=300, bbox_inches="tight")
     st.pyplot(fig)
-    plt.close(fig)
 
     st.divider()
 
@@ -429,5 +431,10 @@ with tab2:
 
     fig2, ax2 = plt.subplots()
     shap.plots.waterfall(explanation, show=False)
+    fig2.savefig(
+        OUTPUT_PATH / f"dashboard_engine_{shap_engine_id}_shap_waterfall.png",
+        dpi=300,
+        bbox_inches="tight"
+    )
     st.pyplot(fig2)
     plt.close(fig2)

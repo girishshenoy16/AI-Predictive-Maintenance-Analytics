@@ -10,7 +10,7 @@ import numpy as np
 # --------------------------------------------------
 DATA_PATH = Path("data/processed/fd001_features.csv")
 MODEL_PATH = Path("models/RF_Classifier_failure_classifier.pkl")
-OUTPUT_PATH = Path("reports")
+OUTPUT_PATH = Path("outputs")
 OUTPUT_PATH.mkdir(exist_ok=True)
 
 # --------------------------------------------------
@@ -91,4 +91,5 @@ plt.tight_layout()
 plt.savefig(OUTPUT_PATH / "shap_bar_plot.png", dpi=300)
 plt.close()
 
-print("SHAP explainability reports saved successfully.")
+print("SHAP explainability visuals saved successfully.")
+print(f"Saved to: {OUTPUT_PATH}")
